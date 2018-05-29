@@ -1,0 +1,6 @@
+FROM openjdk:latest
+MAINTAINER Dinesh Joshi <dineshbias@gmail.com>
+WORKDIR /app
+COPY target/demo-0.0.1-SNAPSHOT.jar /app/
+EXPOSE 8081
+CMD java -jar demo-0.0.1-SNAPSHOT.jar
